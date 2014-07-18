@@ -132,7 +132,7 @@
                 "data": {
                   "name": "parking",
                   "caption": {
-                    "captionText": "Parking Service",
+                    "captionText": "Label.Parking.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -148,27 +148,9 @@
               {
                 "type": "checkbox",
                 "data": {
-                  "name": "refuelling",
-                  "caption": {
-                    "captionText": "Refuelling Service",
-                    "iconPlaceholder": false,
-                    "colored": false,
-                    "tts": false,
-                    "top": false,
-                    "bottom": false
-                  },
-                  "value": "refuelling",
-                  "selected": false,
-                  "top": false,
-                  "bottom": false
-                }
-              },
-              {
-                "type": "checkbox",
-                "data": {
                   "name": "charging",
                   "caption": {
-                    "captionText": "Charging Service",
+                    "captionText": "Label.Charging.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -184,9 +166,27 @@
               {
                 "type": "checkbox",
                 "data": {
+                  "name": "refuelling",
+                  "caption": {
+                    "captionText": "Label.Refuelling.Text",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "refuelling",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
                   "name": "coffee",
                   "caption": {
-                    "captionText": "Coffee Service",
+                    "captionText": "Label.Coffee.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -202,16 +202,16 @@
               {
                 "type": "checkbox",
                 "data": {
-                  "name": "freewifi",
+                  "name": "food",
                   "caption": {
-                    "captionText": "Free Wifi Service",
+                    "captionText": "Label.Food.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
                     "top": false,
                     "bottom": false
                   },
-                  "value": "freewifi",
+                  "value": "food",
                   "selected": false,
                   "top": false,
                   "bottom": false
@@ -221,7 +221,7 @@
                 "type": "submitButton",
                 "data": {
                   "caption": {
-                    "captionText": "Track Destination",
+                    "captionText": "Label.Save.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -240,7 +240,7 @@
           },
           "useGeocoder": false,
           "version": "c1",
-          "heading": "Please select what you needs:",
+          "heading": "Label.ChooseServices.Text",
           "noHistory": false
         }
       },
@@ -257,7 +257,7 @@
                 "data": {
                   "name": "parking",
                   "caption": {
-                    "captionText": "Parking Service",
+                    "captionText": "Label.Parking.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -273,27 +273,9 @@
               {
                 "type": "checkbox",
                 "data": {
-                  "name": "refuelling",
-                  "caption": {
-                    "captionText": "Refuelling Service",
-                    "iconPlaceholder": false,
-                    "colored": false,
-                    "tts": false,
-                    "top": false,
-                    "bottom": false
-                  },
-                  "value": "refuelling",
-                  "selected": false,
-                  "top": false,
-                  "bottom": false
-                }
-              },
-              {
-                "type": "checkbox",
-                "data": {
                   "name": "charging",
                   "caption": {
-                    "captionText": "Charging Service",
+                    "captionText": "Label.Charging.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -309,9 +291,27 @@
               {
                 "type": "checkbox",
                 "data": {
+                  "name": "refuelling",
+                  "caption": {
+                    "captionText": "Label.Refuelling.Text",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "refuelling",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
                   "name": "coffee",
                   "caption": {
-                    "captionText": "Coffee Service",
+                    "captionText": "Label.Coffee.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -327,16 +327,16 @@
               {
                 "type": "checkbox",
                 "data": {
-                  "name": "freewifi",
+                  "name": "food",
                   "caption": {
-                    "captionText": "Free Wifi Service",
+                    "captionText": "Label.Food.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
                     "top": false,
                     "bottom": false
                   },
-                  "value": "freewifi",
+                  "value": "food",
                   "selected": false,
                   "top": false,
                   "bottom": false
@@ -346,7 +346,7 @@
                 "type": "submitButton",
                 "data": {
                   "caption": {
-                    "captionText": "Track Destination",
+                    "captionText": "Label.Save.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -365,7 +365,7 @@
           },
           "useGeocoder": false,
           "version": "c1",
-          "heading": "Please select what you needs:",
+          "heading": "Label.ChooseServices.Text",
           "noHistory": false
         }
       },
@@ -382,7 +382,7 @@
                 "data": {
                   "name": "parking",
                   "caption": {
-                    "captionText": "Parking Service",
+                    "captionText": "Label.Parking.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -398,27 +398,9 @@
               {
                 "type": "checkbox",
                 "data": {
-                  "name": "refuelling",
-                  "caption": {
-                    "captionText": "Refuelling Service",
-                    "iconPlaceholder": false,
-                    "colored": false,
-                    "tts": false,
-                    "top": false,
-                    "bottom": false
-                  },
-                  "value": "refuelling",
-                  "selected": false,
-                  "top": false,
-                  "bottom": false
-                }
-              },
-              {
-                "type": "checkbox",
-                "data": {
                   "name": "charging",
                   "caption": {
-                    "captionText": "Charging Service",
+                    "captionText": "Label.Charging.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -434,9 +416,27 @@
               {
                 "type": "checkbox",
                 "data": {
+                  "name": "refuelling",
+                  "caption": {
+                    "captionText": "Label.Refuelling.Text",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "refuelling",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
                   "name": "coffee",
                   "caption": {
-                    "captionText": "Coffee Service",
+                    "captionText": "Label.Coffee.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -452,16 +452,16 @@
               {
                 "type": "checkbox",
                 "data": {
-                  "name": "freewifi",
+                  "name": "food",
                   "caption": {
-                    "captionText": "Free Wifi Service",
+                    "captionText": "Label.Food.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
                     "top": false,
                     "bottom": false
                   },
-                  "value": "freewifi",
+                  "value": "food",
                   "selected": false,
                   "top": false,
                   "bottom": false
@@ -471,7 +471,7 @@
                 "type": "submitButton",
                 "data": {
                   "caption": {
-                    "captionText": "Track Destination",
+                    "captionText": "Label.Save.Text",
                     "iconPlaceholder": false,
                     "colored": false,
                     "tts": false,
@@ -490,7 +490,7 @@
           },
           "useGeocoder": false,
           "version": "c1",
-          "heading": "Please select what you needs:",
+          "heading": "Label.ChooseServices.Text",
           "noHistory": false
         }
       },

@@ -31,30 +31,27 @@ public class ManifestGenerator {
         Manifest manifest = new Manifest(header);
 
         // Main Screen
-        
-        FormPage mainPage = new FormPage("Please select what you needs:", AppConstant.LIST_SCREEN_ID);
+        FormPage mainPage = new FormPage("Label.ChooseServices.Text", AppConstant.TRACKER_SCREEN_ID);
 
         // Checkbox List
-        Checkbox item1 = new Checkbox(new Caption("Parking Service"), AppConstant.TAG_PARKING, AppConstant.TAG_PARKING);
-        mainPage.addItem(item1);
-
-        Checkbox item2 = new Checkbox(new Caption("Refuelling Service"), AppConstant.TAG_REFUELLING,
+        Checkbox itemParking = new Checkbox(new Caption("Label.Parking.Text"), AppConstant.TAG_PARKING,
+                AppConstant.TAG_PARKING);
+        Checkbox itemRefuelling = new Checkbox(new Caption("Label.Refuelling.Text"), AppConstant.TAG_REFUELLING,
                 AppConstant.TAG_REFUELLING);
-        mainPage.addItem(item2);
-
-        Checkbox item3 = new Checkbox(new Caption("Charging Service"), AppConstant.TAG_CHARGING,
+        Checkbox itemCharing = new Checkbox(new Caption("Label.Charging.Text"), AppConstant.TAG_CHARGING,
                 AppConstant.TAG_CHARGING);
-        mainPage.addItem(item3);
+        Checkbox itemCoffee = new Checkbox(new Caption("Label.Coffee.Text"), AppConstant.TAG_COFFEE,
+                AppConstant.TAG_COFFEE);
+        Checkbox itemFood = new Checkbox(new Caption("Label.Food.Text"), AppConstant.TAG_FOOD, AppConstant.TAG_FOOD);
 
-        Checkbox item4 = new Checkbox(new Caption("Coffee Service"), AppConstant.TAG_COFFEE, AppConstant.TAG_COFFEE);
-        mainPage.addItem(item4);
-
-        Checkbox item5 = new Checkbox(new Caption("Free Wifi Service"), AppConstant.TAG_FREEWIFI,
-                AppConstant.TAG_FREEWIFI);
-        mainPage.addItem(item5);
+        mainPage.addItem(itemParking);
+        mainPage.addItem(itemCharing);
+        mainPage.addItem(itemRefuelling);
+        mainPage.addItem(itemCoffee);
+        mainPage.addItem(itemFood);
 
         // Submit Link
-        SubmitLink submitLink = new SubmitLink(new Caption("Track Destination"));
+        SubmitLink submitLink = new SubmitLink(new Caption("Label.Save.Text"));
         submitLink.target(new LinkTarget(AppConstant.LIST_SCREEN_ID));
         submitLink.setTopSeparator();
         mainPage.addItem(submitLink);
@@ -69,19 +66,21 @@ public class ManifestGenerator {
         listScreenDataSource.addParameter(AppConstant.PARAMETER_SCREENID_KEY, AppConstant.LIST_SCREEN_ID);
         CompositeListPageScreen listScreen = new CompositeListPageScreen(listScreenDataSource, listScreenDataSource,
                 listScreenDataSource);
-        TableConfiguration detailTableConfiguration = new TableConfigRelWidths(
-        		new TableColRelWidth(50, TableCellType.caption), 
-        		new TableColRelWidth(10, TableCellType.caption), 
-        		new TableColRelWidth(40, TableCellType.caption));
+        TableConfiguration detailTableConfiguration = new TableConfigRelWidths(new TableColRelWidth(50,
+                TableCellType.caption), new TableColRelWidth(10, TableCellType.caption), new TableColRelWidth(40,
+                TableCellType.caption));
         listScreen.addTableConfiguration(detailTableConfiguration);
         manifest.addScreen(AppConstant.LIST_SCREEN_ID, listScreen);
-        
-        
+
         RemoteData remoteData = new RemoteData(PAGE_GENERATOR_SERVLET_URL);
         remoteData.addParameter(AppConstant.PARAMETER_SCREENID_KEY, AppConstant.TRACKER_SCREEN_ID);
+
         // Tracker Screen
-        CompositeListPageScreen trackerScreen = new CompositeListPageScreen(remoteData, remoteData, remoteData);
-        
+        RemoteData trackerScreenDataSource = new RemoteData(PAGE_GENERATOR_SERVLET_URL);
+        trackerScreenDataSource.addParameter(AppConstant.PARAMETER_SCREENID_KEY, AppConstant.TRACKER_SCREEN_ID);
+        CompositeListPageScreen trackerScreen = new CompositeListPageScreen(trackerScreenDataSource,
+                trackerScreenDataSource, trackerScreenDataSource);
+
         TableConfigRelWidths tableConfig = new TableConfigRelWidths(new TableColRelWidth(80, TableCellType.any),
                 new TableColRelWidth(80, TableCellType.any), new TableColRelWidth(80, TableCellType.any));
         tableConfig.setRowConfig(new TableRowConfig(TableCellType.remoteImage), new TableRowConfig(

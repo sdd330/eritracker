@@ -1,16 +1,25 @@
 {
     "common": {
-        "App.Name.Text": "HelloWorld",
-        "App.Headline.Text": "HelloWorld"
+        "App.Name.Text": "EriTracker",
+        "App.Headline.Text": "EriTracker"
     },
     "labels": {
         "main":{
-            "Label.Text.firstPage": "Ericsson Communication Software R&D (Shanghai) Co., Ltd."
+            "Label.ChooseServices.Text": "Please choose what service you wish to have",
+            "Label.Parking.Text": "Parking",
+            "Label.Refuelling.Text": "Refuelling",
+            "Label.Charging.Text": "Charging",
+            "Label.Coffee.Text": "Coffee",
+            "Label.Food.Text": "Food",
+            "Label.Save.Text": "Save"
         },
-        "listmore": {
-        	"Column.Name.Text": "test name",
-        	"Column.Distance.Text": "Distance",
-        	"Column.Service.Text": "Service"
+        "list": {
+            "Column.Name.Text": "Name",
+            "Column.Distance.Text": "Distance",
+            "Column.Service.Text": "Service"
+        },
+        "tracker": {
+            "Label.Navigation.Text": "Start Navigation"
         }
     }
 }

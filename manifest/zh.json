@@ -1,16 +1,25 @@
 {
     "common": {
-        "App.Name.Text": "HelloWorld应用",
-        "App.Headline.Text": "HelloWorld应用"
+        "App.Name.Text": "EriTracker",
+        "App.Headline.Text": "EriTracker"
     },
     "labels": {
         "main":{
-            "Label.Text.firstPage": "爱立信(中国)通信有限公司"
+            "Label.ChooseServices.Text": "请选择您想要的服务",
+            "Label.Parking.Text": "停车",
+            "Label.Charging.Text": "充电",
+            "Label.Refuelling.Text": "加油",
+            "Label.Coffee.Text": "咖啡",
+            "Label.Food.Text": "美食",
+            "Label.Save.Text": "提交"
         },
-        "listmore": {
-        	"Column.Name.Text": "名称",
-        	"Column.Distance.Text": "距离",
-        	"Column.Service.Text": "服务"
+        "list": {
+            "Column.Name.Text": "名称",
+            "Column.Distance.Text": "距离",
+            "Column.Service.Text": "服务"
+        },
+        "tracker": {
+            "Label.Navigation.Text": "开始导航"
         }
     }
 }
