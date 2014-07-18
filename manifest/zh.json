@@ -6,6 +6,11 @@
     "labels": {
         "main":{
             "Label.Text.firstPage": "爱立信(中国)通信有限公司"
+        },
+        "listmore": {
+        	"Column.Name.Text": "名称",
+        	"Column.Distance.Text": "距离",
+        	"Column.Service.Text": "服务"
         }
     }
 }

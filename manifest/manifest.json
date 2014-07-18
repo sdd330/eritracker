@@ -8,6 +8,55 @@
     "sdkVersion": "c1"
   },
   "screens": {
+    "listmore": {
+      "template": [
+        "compositeList",
+        "c1"
+      ],
+      "production": {
+        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "parameter": {
+          "page": "listPage"
+        }
+      },
+      "integration": {
+        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "parameter": {
+          "page": "listPage"
+        }
+      },
+      "test": {
+        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "parameter": {
+          "page": "listPage"
+        }
+      },
+      "configuration": {
+        "tableConfig": {
+          "type": "relWidths",
+          "columnConfig": [
+            {
+              "width": 50,
+              "type": "relWidth",
+              "allowedType": "caption",
+              "floatingRow": "firstRow"
+            },
+            {
+              "width": 10,
+              "type": "relWidth",
+              "allowedType": "caption",
+              "floatingRow": "firstRow"
+            },
+            {
+              "width": 40,
+              "type": "relWidth",
+              "allowedType": "caption",
+              "floatingRow": "firstRow"
+            }
+          ]
+        }
+      }
+    },
     "main": {
       "template": [
         "compositeList",

@@ -6,7 +6,11 @@
     "labels": {
         "main":{
             "Label.Text.firstPage": "Ericsson Communication Software R&D (Shanghai) Co., Ltd."
-            
+        },
+        "listmore": {
+        	"Column.Name.Text": "test name",
+        	"Column.Distance.Text": "Distance",
+        	"Column.Service.Text": "Service"
         }
     }
 }
