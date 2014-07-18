@@ -11,7 +11,7 @@
             "Label.Refuelling.Text": "加油",
             "Label.Coffee.Text": "咖啡",
             "Label.Food.Text": "美食",
-            "Label.Save.Text": "提交"
+            "Label.Save.Text": "保存订阅"
         },
         "list": {
             "Column.Name.Text": "名称",
