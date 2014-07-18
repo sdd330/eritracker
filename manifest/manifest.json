@@ -3,61 +3,12 @@
     "id": "EriTracker",
     "version": "1.0",
     "mainpage": "main",
-    "gps": false,
+    "gps": true,
     "icon": "icon-eritracker.png",
     "sdkVersion": "c1"
   },
   "screens": {
-    "listmore": {
-      "template": [
-        "compositeList",
-        "c1"
-      ],
-      "production": {
-        "source": "http://127.0.0.1:8080/eritracker/hello",
-        "parameter": {
-          "page": "listPage"
-        }
-      },
-      "integration": {
-        "source": "http://127.0.0.1:8080/eritracker/hello",
-        "parameter": {
-          "page": "listPage"
-        }
-      },
-      "test": {
-        "source": "http://127.0.0.1:8080/eritracker/hello",
-        "parameter": {
-          "page": "listPage"
-        }
-      },
-      "configuration": {
-        "tableConfig": {
-          "type": "relWidths",
-          "columnConfig": [
-            {
-              "width": 50,
-              "type": "relWidth",
-              "allowedType": "caption",
-              "floatingRow": "firstRow"
-            },
-            {
-              "width": 10,
-              "type": "relWidth",
-              "allowedType": "caption",
-              "floatingRow": "firstRow"
-            },
-            {
-              "width": 40,
-              "type": "relWidth",
-              "allowedType": "caption",
-              "floatingRow": "firstRow"
-            }
-          ]
-        }
-      }
-    },
-    "main": {
+    "tracker": {
       "template": [
         "compositeList",
         "c1"
@@ -107,6 +58,383 @@
           ]
         }
       }
+    },
+    "list": {
+      "template": [
+        "compositeList",
+        "c1"
+      ],
+      "production": {
+        "source": "http://eripark.duapp.com/eritracker/hello",
+        "parameter": {
+          "page": "listPage"
+        }
+      },
+      "integration": {
+        "source": "http://eripark.duapp.com/eritracker/hello",
+        "parameter": {
+          "page": "listPage"
+        }
+      },
+      "test": {
+        "source": "http://eripark.duapp.com/eritracker/hello",
+        "parameter": {
+          "page": "listPage"
+        }
+      },
+      "configuration": {
+        "tableConfig": {
+          "type": "relWidths",
+          "columnConfig": [
+            {
+              "width": 50,
+              "type": "relWidth",
+              "allowedType": "caption",
+              "floatingRow": "firstRow"
+            },
+            {
+              "width": 10,
+              "type": "relWidth",
+              "allowedType": "caption",
+              "floatingRow": "firstRow"
+            },
+            {
+              "width": 40,
+              "type": "relWidth",
+              "allowedType": "caption",
+              "floatingRow": "firstRow"
+            }
+          ]
+        }
+      }
+    },
+    "main": {
+      "template": [
+        "form",
+        "c1"
+      ],
+      "production": {
+        "data": {
+          "form": {
+            "linkTarget": {
+              "returnParams": {},
+              "screen": "tracker"
+            },
+            "componentList": [
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "parking",
+                  "caption": {
+                    "captionText": "Parking Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "parking",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "charging",
+                  "caption": {
+                    "captionText": "Charging Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "charging",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "coffee",
+                  "caption": {
+                    "captionText": "Coffee Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "coffee",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "freewifi",
+                  "caption": {
+                    "captionText": "Free Wifi Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "freewifi",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "submitButton",
+                "data": {
+                  "caption": {
+                    "captionText": "Track Destination",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "linkTarget": {
+                    "returnParams": {},
+                    "screen": "tracker"
+                  },
+                  "top": true,
+                  "bottom": false
+                }
+              }
+            ]
+          },
+          "useGeocoder": false,
+          "version": "c1",
+          "heading": "Please select what you needs:",
+          "noHistory": false
+        }
+      },
+      "integration": {
+        "data": {
+          "form": {
+            "linkTarget": {
+              "returnParams": {},
+              "screen": "tracker"
+            },
+            "componentList": [
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "parking",
+                  "caption": {
+                    "captionText": "Parking Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "parking",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "charging",
+                  "caption": {
+                    "captionText": "Charging Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "charging",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "coffee",
+                  "caption": {
+                    "captionText": "Coffee Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "coffee",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "freewifi",
+                  "caption": {
+                    "captionText": "Free Wifi Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "freewifi",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "submitButton",
+                "data": {
+                  "caption": {
+                    "captionText": "Track Destination",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "linkTarget": {
+                    "returnParams": {},
+                    "screen": "tracker"
+                  },
+                  "top": true,
+                  "bottom": false
+                }
+              }
+            ]
+          },
+          "useGeocoder": false,
+          "version": "c1",
+          "heading": "Please select what you needs:",
+          "noHistory": false
+        }
+      },
+      "test": {
+        "data": {
+          "form": {
+            "linkTarget": {
+              "returnParams": {},
+              "screen": "tracker"
+            },
+            "componentList": [
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "parking",
+                  "caption": {
+                    "captionText": "Parking Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "parking",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "charging",
+                  "caption": {
+                    "captionText": "Charging Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "charging",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "coffee",
+                  "caption": {
+                    "captionText": "Coffee Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "coffee",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "freewifi",
+                  "caption": {
+                    "captionText": "Free Wifi Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "freewifi",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "submitButton",
+                "data": {
+                  "caption": {
+                    "captionText": "Track Destination",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "linkTarget": {
+                    "returnParams": {},
+                    "screen": "tracker"
+                  },
+                  "top": true,
+                  "bottom": false
+                }
+              }
+            ]
+          },
+          "useGeocoder": false,
+          "version": "c1",
+          "heading": "Please select what you needs:",
+          "noHistory": false
+        }
+      },
+      "configuration": {}
     }
   }
 }
