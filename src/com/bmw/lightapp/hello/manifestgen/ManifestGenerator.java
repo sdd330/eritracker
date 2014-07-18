@@ -62,7 +62,7 @@ public class ManifestGenerator {
 
         // List Screen
         RemoteData listScreenDataSource = new RemoteData(PAGE_GENERATOR_SERVLET_URL);
-        listScreenDataSource.addParameter("page", "listPage");
+        listScreenDataSource.addParameter(AppConstant.PARAMETER_SCREENID_KEY, "listPage");
         CompositeListPageScreen listScreen = new CompositeListPageScreen(listScreenDataSource, listScreenDataSource,
                 listScreenDataSource);
         TableConfiguration detailTableConfiguration = new TableConfigRelWidths(new TableColRelWidth(50,
