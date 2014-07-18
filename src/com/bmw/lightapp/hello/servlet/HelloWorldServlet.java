@@ -30,9 +30,13 @@ public class HelloWorldServlet extends HttpServlet {
             if (AppConstant.MAIN_SCREEN_ID.equals(screenID)) {
                 // NONE
             } else if (AppConstant.LIST_SCREEN_ID.equals(screenID)) {
-                responseString = PageGenerator.generatePakringListPage();
+            	String lat = pRequest.getParameter(AppConstant.PARAMETER_GEO_LAT);
+            	String lon = pRequest.getParameter(AppConstant.PARAMETER_GEO_LON);
+            	String tag = "parking"; // Value: coffee/parking/powerCharge
+                responseString = PageGenerator.generatePakringListPage(lat, lon, tag);
             } else if (AppConstant.TRACKER_SCREEN_ID.equals(screenID)) {
-                responseString = PageGenerator.generateTrackerPage();
+            	String id = pRequest.getParameter(AppConstant.PARAMETER_PLACE_ID);
+                responseString = PageGenerator.generateTrackerPage(id);
             }
         } catch (Exception ex) {
             LOG.log(Level.SEVERE, "something went wrong", ex);

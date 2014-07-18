@@ -16,7 +16,8 @@
         "list": {
             "Column.Name.Text": "Name",
             "Column.Distance.Text": "Distance",
-            "Column.Service.Text": "Service"
+            "Column.Service.Text": "Service",
+            "Column.FreeParkingCount.Text": "Parking"
         },
         "tracker": {
             "Label.Navigation.Text": "Start Navigation"

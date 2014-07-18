@@ -8,7 +8,10 @@ public class AppConstant {
     public static String TRACKER_SCREEN_ID = "tracker";
 
     public static String PARAMETER_SCREENID_KEY = "action";
-
+    public static String PARAMETER_GEO_LAT = "lat";
+    public static String PARAMETER_GEO_LON = "lon";
+    public static String PARAMETER_PLACE_ID = "id";
+    
     public static String TAG_REFUELLING = "refuelling";
     public static String TAG_PARKING = "parking";
     public static String TAG_CHARGING = "charging";

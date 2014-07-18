@@ -16,7 +16,8 @@
         "list": {
             "Column.Name.Text": "名称",
             "Column.Distance.Text": "距离",
-            "Column.Service.Text": "服务"
+            "Column.Service.Text": "服务",
+            "Column.FreeParkingCount.Text": "剩余车位"
         },
         "tracker": {
             "Label.Navigation.Text": "开始导航"
