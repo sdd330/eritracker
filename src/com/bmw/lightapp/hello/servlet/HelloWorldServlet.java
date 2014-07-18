@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.bmw.developer.cloud.c1.data.component.Link;
 import com.bmw.developer.cloud.c1.data.component.RemoteImage;
 import com.bmw.developer.cloud.c1.data.component.Table;
 import com.bmw.developer.cloud.c1.data.component.TableCell;
@@ -32,12 +33,8 @@ public class HelloWorldServlet extends HttpServlet {
             CompositeListPage page = new CompositeListPage();
             //page.addItem(new Caption("Label.Text.firstPage"));
             Table trackerTable = new Table();
-            TableRow numberRow = new TableRow();
-            numberRow.addCell("0");
-            numberRow.addCell("0");
-            numberRow.addCell("0");
-            trackerTable.addRow(numberRow);
 
+            // Image Row
             TableRow imageRow = new TableRow();
             imageRow.setLineHeight("100%");
             TableCell imageCell1 = new TableCell();
@@ -54,8 +51,20 @@ public class HelloWorldServlet extends HttpServlet {
 
             trackerTable.addRow(imageRow);
 
+            // Number Row
+            TableRow numberRow = new TableRow();
+            numberRow.addCell("0");
+            numberRow.addCell("0");
+            numberRow.addCell("0");
+            trackerTable.addRow(numberRow);
+
             trackerTable.setWidth("100%");
             page.addItem(trackerTable);
+
+            Link link = new Link("listmore");
+            link.setTopSeparator();
+            link.setCaption("Ericsson China Shanghai R&D");
+            page.addItem(link);
 
             responseString = page.toJson();
         } catch (Exception ex) {

@@ -1,10 +1,10 @@
 {
   "header": {
-    "id": "helloWorld",
+    "id": "EriTracker",
     "version": "1.0",
     "mainpage": "main",
     "gps": false,
-    "icon": "icon-helloworld.png",
+    "icon": "icon-eritracker.png",
     "sdkVersion": "c1"
   },
   "screens": {
@@ -14,15 +14,15 @@
         "c1"
       ],
       "production": {
-        "source": "http://eripark.duapp.com/HelloWorld/hello",
+        "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {}
       },
       "integration": {
-        "source": "http://eripark.duapp.com/HelloWorld/hello",
+        "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {}
       },
       "test": {
-        "source": "http://eripark.duapp.com/HelloWorld/hello",
+        "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {}
       },
       "configuration": {
@@ -50,10 +50,10 @@
           ],
           "rowConfig": [
             {
-              "allowedType": "caption"
+              "allowedType": "remoteImage"
             },
             {
-              "allowedType": "remoteImage"
+              "allowedType": "caption"
             }
           ]
         }
