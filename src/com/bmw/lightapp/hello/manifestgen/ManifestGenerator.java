@@ -27,7 +27,7 @@ public class ManifestGenerator {
 
     public static void main(String[] args) {
 
-        Header header = new Header("EriTracker", "1.0", AppConstant.MAIN_SCREEN_ID, true, "icon-eritracker.png");
+        Header header = new Header("EriTracker", "1.0", AppConstant.MAIN_SCREEN_ID, true, "icon-eritracker.jpg");
         Manifest manifest = new Manifest(header);
 
         // Main Screen
@@ -38,16 +38,20 @@ public class ManifestGenerator {
         Checkbox item1 = new Checkbox(new Caption("Parking Service"), AppConstant.TAG_PARKING, AppConstant.TAG_PARKING);
         mainPage.addItem(item1);
 
-        Checkbox item2 = new Checkbox(new Caption("Charging Service"), AppConstant.TAG_CHARGING,
-                AppConstant.TAG_CHARGING);
+        Checkbox item2 = new Checkbox(new Caption("Refuelling Service"), AppConstant.TAG_REFUELLING,
+                AppConstant.TAG_REFUELLING);
         mainPage.addItem(item2);
 
-        Checkbox item3 = new Checkbox(new Caption("Coffee Service"), AppConstant.TAG_COFFEE, AppConstant.TAG_COFFEE);
+        Checkbox item3 = new Checkbox(new Caption("Charging Service"), AppConstant.TAG_CHARGING,
+                AppConstant.TAG_CHARGING);
         mainPage.addItem(item3);
 
-        Checkbox item4 = new Checkbox(new Caption("Free Wifi Service"), AppConstant.TAG_FREEWIFI,
-                AppConstant.TAG_FREEWIFI);
+        Checkbox item4 = new Checkbox(new Caption("Coffee Service"), AppConstant.TAG_COFFEE, AppConstant.TAG_COFFEE);
         mainPage.addItem(item4);
+
+        Checkbox item5 = new Checkbox(new Caption("Free Wifi Service"), AppConstant.TAG_FREEWIFI,
+                AppConstant.TAG_FREEWIFI);
+        mainPage.addItem(item5);
 
         // Submit Link
         SubmitLink submitLink = new SubmitLink(new Caption("Track Destination"));

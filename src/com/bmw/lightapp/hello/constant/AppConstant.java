@@ -9,6 +9,7 @@ public class AppConstant {
 
     public static String PARAMETER_SCREENID_KEY = "action";
 
+    public static String TAG_REFUELLING = "refuelling";
     public static String TAG_PARKING = "parking";
     public static String TAG_CHARGING = "charging";
     public static String TAG_COFFEE = "coffee";

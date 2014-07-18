@@ -4,7 +4,7 @@
     "version": "1.0",
     "mainpage": "main",
     "gps": true,
-    "icon": "icon-eritracker.png",
+    "icon": "icon-eritracker.jpg",
     "sdkVersion": "c1"
   },
   "screens": {
@@ -67,19 +67,19 @@
       "production": {
         "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {
-          "page": "listPage"
+          "action": "list"
         }
       },
       "integration": {
         "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {
-          "page": "listPage"
+          "action": "list"
         }
       },
       "test": {
         "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {
-          "page": "listPage"
+          "action": "list"
         }
       },
       "configuration": {
@@ -142,6 +142,24 @@
               {
                 "type": "checkbox",
                 "data": {
+                  "name": "refuelling",
+                  "caption": {
+                    "captionText": "Refuelling Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "refuelling",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
                   "name": "charging",
                   "caption": {
                     "captionText": "Charging Service",
@@ -249,6 +267,24 @@
               {
                 "type": "checkbox",
                 "data": {
+                  "name": "refuelling",
+                  "caption": {
+                    "captionText": "Refuelling Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "refuelling",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
                   "name": "charging",
                   "caption": {
                     "captionText": "Charging Service",
@@ -348,6 +384,24 @@
                     "bottom": false
                   },
                   "value": "parking",
+                  "selected": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "checkbox",
+                "data": {
+                  "name": "refuelling",
+                  "caption": {
+                    "captionText": "Refuelling Service",
+                    "iconPlaceholder": false,
+                    "colored": false,
+                    "tts": false,
+                    "top": false,
+                    "bottom": false
+                  },
+                  "value": "refuelling",
                   "selected": false,
                   "top": false,
                   "bottom": false

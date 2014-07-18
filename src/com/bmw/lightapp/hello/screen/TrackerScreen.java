@@ -34,24 +34,24 @@ public class TrackerScreen {
         TableRow imageRow = new TableRow();
         imageRow.setLineHeight("100%");
         TableCell imageCell1 = new TableCell();
-        imageCell1.setVariableContent(new RemoteImage("http://eripark.duapp.com/resources/parking_service.png"));
+        imageCell1.setVariableContent(new RemoteImage("http://eripark.duapp.com/resources/parking.jpg"));
         imageRow.addCell(imageCell1);
 
         TableCell imageCell2 = new TableCell();
-        imageCell2.setVariableContent(new RemoteImage("http://eripark.duapp.com/resources/charging_service.png"));
+        imageCell2.setVariableContent(new RemoteImage("http://eripark.duapp.com/resources/charging.jpg"));
         imageRow.addCell(imageCell2);
 
         TableCell imageCell3 = new TableCell();
-        imageCell3.setVariableContent(new RemoteImage("http://eripark.duapp.com/resources/food_service.png"));
+        imageCell3.setVariableContent(new RemoteImage("http://eripark.duapp.com/resources/food.jpg"));
         imageRow.addCell(imageCell3);
 
         trackerTable.addRow(imageRow);
 
         // Number Row
         TableRow numberRow = new TableRow();
+        numberRow.addCell("2");
         numberRow.addCell("0");
-        numberRow.addCell("0");
-        numberRow.addCell("0");
+        numberRow.addCell("5");
         trackerTable.addRow(numberRow);
 
         trackerTable.setWidth("100%");

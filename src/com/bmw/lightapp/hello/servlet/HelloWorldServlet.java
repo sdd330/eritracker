@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.bmw.lightapp.hello.constant.AppConstant;
 import com.bmw.lightapp.hello.page.PageGenerator;
-import com.bmw.lightapp.hello.screen.TrackerScreen;
 
 @SuppressWarnings("javadoc")
 public class HelloWorldServlet extends HttpServlet {
@@ -33,8 +32,7 @@ public class HelloWorldServlet extends HttpServlet {
             } else if (AppConstant.LIST_SCREEN_ID.equals(screenID)) {
                 responseString = PageGenerator.generatePakringListPage();
             } else if (AppConstant.TRACKER_SCREEN_ID.equals(screenID)) {
-                TrackerScreen trackerScreen = new TrackerScreen();
-                responseString = trackerScreen.toJson();
+                responseString = PageGenerator.generateTrackerPage();
             }
         } catch (Exception ex) {
             LOG.log(Level.SEVERE, "something went wrong", ex);
