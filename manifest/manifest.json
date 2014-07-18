@@ -206,7 +206,7 @@
                   },
                   "linkTarget": {
                     "returnParams": {},
-                    "screen": "tracker"
+                    "screen": "list"
                   },
                   "top": true,
                   "bottom": false
@@ -313,7 +313,7 @@
                   },
                   "linkTarget": {
                     "returnParams": {},
-                    "screen": "tracker"
+                    "screen": "list"
                   },
                   "top": true,
                   "bottom": false
@@ -420,7 +420,7 @@
                   },
                   "linkTarget": {
                     "returnParams": {},
-                    "screen": "tracker"
+                    "screen": "list"
                   },
                   "top": true,
                   "bottom": false

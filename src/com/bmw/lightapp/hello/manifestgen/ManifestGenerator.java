@@ -31,7 +31,7 @@ public class ManifestGenerator {
         Manifest manifest = new Manifest(header);
 
         // Main Screen
-        RemoteData remoteData = new RemoteData("http://eripark.duapp.com/eritracker/hello");
+        RemoteData remoteData = new RemoteData(PAGE_GENERATOR_SERVLET_URL);
         FormPage mainPage = new FormPage("Please select what you needs:", AppConstant.TRACKER_SCREEN_ID);
 
         // Checkbox List
@@ -51,7 +51,7 @@ public class ManifestGenerator {
 
         // Submit Link
         SubmitLink submitLink = new SubmitLink(new Caption("Track Destination"));
-        submitLink.target(new LinkTarget(AppConstant.TRACKER_SCREEN_ID));
+        submitLink.target(new LinkTarget(AppConstant.LIST_SCREEN_ID));
         submitLink.setTopSeparator();
         mainPage.addItem(submitLink);
 
