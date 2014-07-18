@@ -31,8 +31,8 @@ public class ManifestGenerator {
         Manifest manifest = new Manifest(header);
 
         // Main Screen
-        RemoteData remoteData = new RemoteData(PAGE_GENERATOR_SERVLET_URL);
-        FormPage mainPage = new FormPage("Please select what you needs:", AppConstant.TRACKER_SCREEN_ID);
+        
+        FormPage mainPage = new FormPage("Please select what you needs:", AppConstant.LIST_SCREEN_ID);
 
         // Checkbox List
         Checkbox item1 = new Checkbox(new Caption("Parking Service"), AppConstant.TAG_PARKING, AppConstant.TAG_PARKING);
@@ -69,15 +69,19 @@ public class ManifestGenerator {
         listScreenDataSource.addParameter(AppConstant.PARAMETER_SCREENID_KEY, AppConstant.LIST_SCREEN_ID);
         CompositeListPageScreen listScreen = new CompositeListPageScreen(listScreenDataSource, listScreenDataSource,
                 listScreenDataSource);
-        TableConfiguration detailTableConfiguration = new TableConfigRelWidths(new TableColRelWidth(50,
-                TableCellType.caption), new TableColRelWidth(10, TableCellType.caption), new TableColRelWidth(40,
-                TableCellType.caption));
+        TableConfiguration detailTableConfiguration = new TableConfigRelWidths(
+        		new TableColRelWidth(50, TableCellType.caption), 
+        		new TableColRelWidth(10, TableCellType.caption), 
+        		new TableColRelWidth(40, TableCellType.caption));
         listScreen.addTableConfiguration(detailTableConfiguration);
         manifest.addScreen(AppConstant.LIST_SCREEN_ID, listScreen);
-
+        
+        
+        RemoteData remoteData = new RemoteData(PAGE_GENERATOR_SERVLET_URL);
+        remoteData.addParameter(AppConstant.PARAMETER_SCREENID_KEY, AppConstant.TRACKER_SCREEN_ID);
         // Tracker Screen
         CompositeListPageScreen trackerScreen = new CompositeListPageScreen(remoteData, remoteData, remoteData);
-
+        
         TableConfigRelWidths tableConfig = new TableConfigRelWidths(new TableColRelWidth(80, TableCellType.any),
                 new TableColRelWidth(80, TableCellType.any), new TableColRelWidth(80, TableCellType.any));
         tableConfig.setRowConfig(new TableRowConfig(TableCellType.remoteImage), new TableRowConfig(

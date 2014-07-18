@@ -14,21 +14,21 @@
         "c1"
       ],
       "production": {
-        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {
-          "action": "list"
+          "action": "tracker"
         }
       },
       "integration": {
-        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {
-          "action": "list"
+          "action": "tracker"
         }
       },
       "test": {
-        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {
-          "action": "list"
+          "action": "tracker"
         }
       },
       "configuration": {
@@ -71,19 +71,19 @@
         "c1"
       ],
       "production": {
-        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {
           "action": "list"
         }
       },
       "integration": {
-        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {
           "action": "list"
         }
       },
       "test": {
-        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "source": "http://eripark.duapp.com/eritracker/hello",
         "parameter": {
           "action": "list"
         }
@@ -124,7 +124,7 @@
           "form": {
             "linkTarget": {
               "returnParams": {},
-              "screen": "tracker"
+              "screen": "list"
             },
             "componentList": [
               {
@@ -249,7 +249,7 @@
           "form": {
             "linkTarget": {
               "returnParams": {},
-              "screen": "tracker"
+              "screen": "list"
             },
             "componentList": [
               {
@@ -374,7 +374,7 @@
           "form": {
             "linkTarget": {
               "returnParams": {},
-              "screen": "tracker"
+              "screen": "list"
             },
             "componentList": [
               {
