@@ -1,0 +1,63 @@
+{
+  "header": {
+    "id": "helloWorld",
+    "version": "1.0",
+    "mainpage": "main",
+    "gps": false,
+    "icon": "icon-helloworld.png",
+    "sdkVersion": "c1"
+  },
+  "screens": {
+    "main": {
+      "template": [
+        "compositeList",
+        "c1"
+      ],
+      "production": {
+        "source": "http://eripark.duapp.com/HelloWorld/hello",
+        "parameter": {}
+      },
+      "integration": {
+        "source": "http://eripark.duapp.com/HelloWorld/hello",
+        "parameter": {}
+      },
+      "test": {
+        "source": "http://eripark.duapp.com/HelloWorld/hello",
+        "parameter": {}
+      },
+      "configuration": {
+        "tableConfig": {
+          "type": "relWidths",
+          "columnConfig": [
+            {
+              "width": 80,
+              "type": "relWidth",
+              "allowedType": "any",
+              "floatingRow": "firstRow"
+            },
+            {
+              "width": 80,
+              "type": "relWidth",
+              "allowedType": "any",
+              "floatingRow": "firstRow"
+            },
+            {
+              "width": 80,
+              "type": "relWidth",
+              "allowedType": "any",
+              "floatingRow": "firstRow"
+            }
+          ],
+          "rowConfig": [
+            {
+              "allowedType": "caption"
+            },
+            {
+              "allowedType": "remoteImage"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

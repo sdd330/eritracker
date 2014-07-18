@@ -1,0 +1,12 @@
+{
+    "common": {
+        "App.Name.Text": "HelloWorld",
+        "App.Headline.Text": "HelloWorld"
+    },
+    "labels": {
+        "main":{
+            "Label.Text.firstPage": "Ericsson Communication Software R&D (Shanghai) Co., Ltd."
+            
+        }
+    }
+}
