@@ -4,6 +4,7 @@ import com.bmw.developer.cloud.c1.data.component.LinkColumns;
 import com.bmw.developer.cloud.c1.data.component.Table;
 import com.bmw.developer.cloud.c1.data.component.TableRow;
 import com.bmw.developer.cloud.c1.data.page.CompositeListPage;
+import com.bmw.lightapp.hello.constant.AppConstant;
 import com.bmw.lightapp.hello.screen.TrackerScreen;
 
 @SuppressWarnings("javadoc")
@@ -33,7 +34,7 @@ public class PageGenerator {
     private static void addMockRows(CompositeListPage page) {
         //TODO: mock data here, replace with real data after backend is ready
         for (int i = 0; i < 3; i++) {
-            LinkColumns poiLinks = new LinkColumns("Details");
+            LinkColumns poiLinks = new LinkColumns(AppConstant.TRACKER_SCREEN_ID);
             poiLinks.addReturnParam("xx", "xxxxxx" + i);
             poiLinks.addTextCell("name" + i);
             poiLinks.addTextCell("Service " + i);

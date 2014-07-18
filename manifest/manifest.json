@@ -14,16 +14,22 @@
         "c1"
       ],
       "production": {
-        "source": "http://eripark.duapp.com/eritracker/hello",
-        "parameter": {}
+        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "parameter": {
+          "action": "list"
+        }
       },
       "integration": {
-        "source": "http://eripark.duapp.com/eritracker/hello",
-        "parameter": {}
+        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "parameter": {
+          "action": "list"
+        }
       },
       "test": {
-        "source": "http://eripark.duapp.com/eritracker/hello",
-        "parameter": {}
+        "source": "http://127.0.0.1:8080/eritracker/hello",
+        "parameter": {
+          "action": "list"
+        }
       },
       "configuration": {
         "tableConfig": {
@@ -65,19 +71,19 @@
         "c1"
       ],
       "production": {
-        "source": "http://eripark.duapp.com/eritracker/hello",
+        "source": "http://127.0.0.1:8080/eritracker/hello",
         "parameter": {
           "action": "list"
         }
       },
       "integration": {
-        "source": "http://eripark.duapp.com/eritracker/hello",
+        "source": "http://127.0.0.1:8080/eritracker/hello",
         "parameter": {
           "action": "list"
         }
       },
       "test": {
-        "source": "http://eripark.duapp.com/eritracker/hello",
+        "source": "http://127.0.0.1:8080/eritracker/hello",
         "parameter": {
           "action": "list"
         }
